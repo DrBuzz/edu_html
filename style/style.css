@@ -1,0 +1,106 @@
+body 
+{
+  background: url("../pix/back01.jpg") no-repeat fixed;
+  background-position: right bottom;
+  background-color: #000000;
+}
+
+body nav
+{
+  color: magenta;
+  font: bold 16px Arial, Verdana, sans-serif;;
+  width: 100%;
+  text-align: center;
+}
+
+body nav a
+{
+  color: inherit;
+}
+
+.logo 
+{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1
+{
+  font: bold 18px Arial, Verdana, sans-serif;
+  color: yellow;
+  text-align: center;  
+  text-transform: uppercase;
+}
+
+h3
+{
+  font: bold 16px Arial, Verdana, sans-serif;
+  color: yellow;
+  text-align: left;  
+}
+
+h4
+{
+  font: bold 14px Arial, Verdana, sans-serif;
+  color: yellow;
+  text-align: left;  
+}
+
+p
+{
+  color: white;
+  font: 14px Arial, Verdana, sans-serif;
+  text-shadow: 2px 2px 3px black;
+}
+
+.hero_preview
+{
+  display: block;
+  max-width:400px;
+  width: 100%;
+}
+
+.description
+{
+  border: 2px solid gray;
+}
+
+.heroes_list
+{
+  list-style-image: url("../pix/userinfo.svg");
+  font: 14px Arial, Verdana, sans-serif;
+  color: white;
+}
+
+.heroes_list a
+{
+  color: white;
+}
+
+footer
+{
+  color: gray;
+  font: 10px Arial, Verdana, sans-serif;  
+}
+
+textarea 
+{
+  width: 400px;
+  height: 200px;
+  font: bold 14px Courier, monospace;
+  color:blue;
+}
+
+input[type="text"]
+{
+  width: 400px;
+  height: 30px;
+  font: bold 14px Courier, monospace;
+  color: blue;
+}
+
+.topbutton
+{
+  width: 24px;
+}
