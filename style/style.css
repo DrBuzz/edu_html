@@ -9,6 +9,9 @@ body
 
 }
 
+a:link{color:inherit}
+a:visited{color:inherit}
+
 body nav
 {
   color: magenta;
@@ -68,8 +71,8 @@ p
 
 .description
 {
-<!--border: 2px solid gray;>
-  text-align: center;
+/* border: 2px solid gray;*/
+  text-align: left;
   padding-right: 20px;
   padding-left: 20px;
 }
@@ -92,11 +95,14 @@ p
   font: 14px Arial, Verdana, sans-serif;
   color: white;
 }
-
-.heroes_list a
+.heroes_list li:first-child
 {
-  color: white;
+  color: green;  
 }
+.heroes_list a:visited
+{
+  color: inherit;
+} 
 
 footer
 {
@@ -164,4 +170,38 @@ form
 {
   display: none; 
 }
+}
+
+
+.flex-nav {
+display: flex;
+justify-content: center;
+}
+.nav-item {
+padding-right: 10px;
+padding-left: 10px;
+/* border: 2px solid gray;*/
+
+}
+.flex-container {
+display: flex;
+justify-content: space-evenly;
+align-items: stretch;
+}
+.flex-item {
+display: block;
+  width:200px;
+}
+/* Small screens */
+@media all and (max-width: 750px) {
+  .flex-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media all and (max-width: 450px) {
+  .flex-nav {
+  flex-direction: column;
+  }
 }
