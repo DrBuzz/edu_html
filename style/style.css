@@ -22,9 +22,12 @@ body nav
 
 body nav a
 {
-  color: inherit;
+  text-decoration: none;
 }
 
+body nav a:after {content: " | "}
+body nav a:last-child:after {content: ""}
+body nav a:hover {color: darkmagenta;}
 .logo 
 {
   display: block;
@@ -95,14 +98,10 @@ p
   font: 14px Arial, Verdana, sans-serif;
   color: white;
 }
-.heroes_list li:first-child
+/*.heroes_list li:first-child
 {
   color: green;  
-}
-.heroes_list a:visited
-{
-  color: inherit;
-} 
+} */
 
 footer
 {
@@ -118,6 +117,8 @@ textarea
   color:blue;
 }
 
+textarea:focus{border: 3px solid blue;}
+
 input[type="text"]
 {
   width: 400px;
@@ -125,6 +126,8 @@ input[type="text"]
   font: bold 14px Courier, monospace;
   color: blue;
 }
+
+input[type="text"]:focus{border: 3px solid blue;}
 
 .topbutton
 {
@@ -172,11 +175,13 @@ form
 }
 }
 
-
 .flex-nav {
 display: flex;
 justify-content: center;
 }
+
+.flex-nav a:after {content: ""}
+
 .nav-item {
 padding-right: 10px;
 padding-left: 10px;
@@ -204,4 +209,18 @@ display: block;
   .flex-nav {
   flex-direction: column;
   }
+}
+
+.btn-watch {
+/*  background: blue;*/
+  background-image: linear-gradient(to bottom, #a5b8da, #7089b3);
+  color: white;
+  padding: 20px 20px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px 3px rgba(200,200,200,0.5);
+  transition: padding 500ms; 
+}
+
+.btn-watch:hover {
+  padding: 20px 30px;
 }
